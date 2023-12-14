@@ -29,15 +29,21 @@ const routes = [
     icon: <Squares2X2Icon className={iconClasses}/>, 
     name: 'Dashboard',
   },
+  
+   {
+    path: '/app/transactions', // url
+    icon: <CurrencyDollarIcon className={iconClasses}/>, // icon component
+    name: 'Purchases Transactions', // name that appear in Sidebar
+  },
+   {
+    path: '/app/transactions', // url
+    icon: <CurrencyDollarIcon className={iconClasses}/>, // icon component
+    name: 'Sales Transactions', // name that appear in Sidebar
+  },
   {
     path: '/app/leads', // url
     icon: <InboxArrowDownIcon className={iconClasses}/>, // icon component
-    name: 'Leads', // name that appear in Sidebar
-  },
-  {
-    path: '/app/transactions', // url
-    icon: <CurrencyDollarIcon className={iconClasses}/>, // icon component
-    name: 'Transactions', // name that appear in Sidebar
+    name: 'Bills Transaction', // name that appear in Sidebar
   },
   {
     path: '/app/charts', // url
@@ -45,15 +51,34 @@ const routes = [
     name: 'Analytics', // name that appear in Sidebar
   },
   {
-    path: '/app/integration', // url
-    icon: <BoltIcon className={iconClasses}/>, // icon component
-    name: 'Integration', // name that appear in Sidebar
+    path: '', //no url needed as this has submenu
+    icon: <Squares2X2Icon className={`${iconClasses} inline` }/>, // icon component
+    name: 'Bottle Production Depertment ', // name that appear in Sidebar
+    submenu : [
+      {
+        path: '/login',
+        icon: <ArrowRightOnRectangleIcon className={submenuIconClasses}/>,
+        name: 'Purchases',
+      },
+      {
+        path: '/register', //url
+        icon: <UserIcon className={submenuIconClasses}/>, // icon component
+        name: ' Bottle Dispatches', // name that appear in Sidebar
+      },
+      {
+        path: '/forgot-password',
+        icon: <KeyIcon className={submenuIconClasses}/>,
+        name: 'Bills',
+      },
+      {
+        path: '/app/blank',
+        icon: <DocumentIcon className={submenuIconClasses}/>,
+        name: 'Botlle Production ',
+      },
+      
+    ]
   },
-  {
-    path: '/app/calendar', // url
-    icon: <CalendarDaysIcon className={iconClasses}/>, // icon component
-    name: 'Calendar', // name that appear in Sidebar
-  },
+ 
 
   {
     path: '', //no url needed as this has submenu
@@ -131,7 +156,16 @@ const routes = [
       }
     ]
   },
-  
+   {
+    path: '/app/integration', // url
+    icon: <BoltIcon className={iconClasses}/>, // icon component
+    name: 'Integration', // name that appear in Sidebar
+  },
+  {
+    path: '/app/calendar', // url
+    icon: <CalendarDaysIcon className={iconClasses}/>, // icon component
+    name: 'Calendar', // name that appear in Sidebar
+  },
 ]
 
 export default routes
