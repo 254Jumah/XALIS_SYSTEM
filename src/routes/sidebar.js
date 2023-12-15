@@ -78,8 +78,116 @@ const routes = [
       
     ]
   },
- 
 
+  {
+    path: '', //no url needed as this has submenu
+    icon: <Squares2X2Icon className={`${iconClasses} inline` }/>, // icon component
+    name: 'Water Production Depertment ', // name that appear in Sidebar
+    submenu : [
+      {
+        path: '/login',
+        icon: <ArrowRightOnRectangleIcon className={submenuIconClasses}/>,
+        name: 'Purchases',
+      },
+       {
+        path: '/register', //url
+        icon: <UserIcon className={submenuIconClasses}/>, // icon component
+        name: '  Production', // name that appear in Sidebar
+      },
+       {
+        path: '/register', //url
+        icon: <UserIcon className={submenuIconClasses}/>, // icon component
+        name: 'Daily Production', // name that appear in Sidebar
+      },
+      {
+        path: '/register', //url
+        icon: <UserIcon className={submenuIconClasses}/>, // icon component
+        name: ' Product Assigned ', // name that appear in Sidebar
+      },
+      {
+        path: '/forgot-password',
+        icon: <KeyIcon className={submenuIconClasses}/>,
+        name: '',
+      },
+      {
+        path: '/app/blank',
+        icon: <DocumentIcon className={submenuIconClasses}/>,
+        name: 'Botlle Production ',
+      },
+      
+    ]
+  },
+  {
+    path: '', //no url needed as this has submenu
+    icon: <Squares2X2Icon className={`${iconClasses} inline` }/>, // icon component
+    name: 'Product Assignment  ', // name that appear in Sidebar
+    submenu : [
+      {
+        path: '/login',
+        icon: <ArrowRightOnRectangleIcon className={submenuIconClasses}/>,
+        name: ' Create products Assignment',
+      },
+       {
+        path: '/register', //url
+        icon: <UserIcon className={submenuIconClasses}/>, // icon component
+        name: '  View Assignments', // name that appear in Sidebar
+      },
+      
+      
+    ]
+  },
+
+ {
+    path: '', //no url needed as this has submenu
+    icon: <Squares2X2Icon className={`${iconClasses} inline` }/>, // icon component
+    name:  'Sales Depertments ', // name that appear in Sidebar
+    submenu : [
+      {
+        path: '/login',
+        icon: <ArrowRightOnRectangleIcon className={submenuIconClasses}/>,
+        name: 'Account 1',
+      },
+       {
+        path: '/register', //url
+        icon: <UserIcon className={submenuIconClasses}/>, // icon component
+        name: '  account type 2', // name that appear in Sidebar
+      },
+       {
+        path: '/register', //url
+        icon: <UserIcon className={submenuIconClasses}/>, // icon component
+        name: 'Account type 3', // name that appear in Sidebar
+      },
+          
+    ]
+  },
+  {
+    path: '', //no url needed as this has submenu
+    icon: <Squares2X2Icon className={`${iconClasses} inline` }/>, // icon component
+    name: 'Settings ', // name that appear in Sidebar
+    submenu : [
+      {
+        path: '/login',
+        icon: <ArrowRightOnRectangleIcon className={submenuIconClasses}/>,
+        name: 'Add products',
+      },
+       {
+        path: '/register', //url
+        icon: <UserIcon className={submenuIconClasses}/>, // icon component
+        name: '  Create users', // name that appear in Sidebar
+      },
+       {
+        path: '/register', //url
+        icon: <UserIcon className={submenuIconClasses}/>, // icon component
+        name: ' Create Bills ', // name that appear in Sidebar
+      },
+      {
+        path: '/register', //url
+        icon: <UserIcon className={submenuIconClasses}/>, // icon component
+        name: ' Manage users', // name that appear in Sidebar
+      },
+      
+    ]
+  },
   {
     path: '', //no url needed as this has submenu
     icon: <DocumentDuplicateIcon className={`${iconClasses} inline` }/>, // icon component

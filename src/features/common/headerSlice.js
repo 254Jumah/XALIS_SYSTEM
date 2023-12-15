@@ -5,7 +5,7 @@ export const headerSlice = createSlice({
     initialState: {
         pageTitle: "Home",  // current page title state management
         noOfNotifications : 23,  // no of unread notifications
-        newNotificationMessage : "welcome manu",  // message of notification to be shown
+        newNotificationMessage : "WELCOME TO XALIS SYSTEM",  // message of notification to be shown
         newNotificationStatus : 1,   // to check the notification type -  success/ error/ info
     },
     reducers: {

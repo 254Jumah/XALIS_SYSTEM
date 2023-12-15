@@ -11,7 +11,7 @@ function LandingIntro(){
 
               <h1 className='text-3xl text-center font-bold '><img src="/logo.jpg" className="w-12 inline-block mr-2 mask mask-circle" alt="dashw-logo " />Xalis system</h1>
 
-                <div className="text-center mt-12 m "><img src="./logo.jpg" alt="emmat solutions" className="w-48 inline-block"></img></div>
+                <div className="text-center mt-12 m "><img src="/logo.jpg" alt="emmat solutions" className="w-48 inline-block"></img></div>
               
               {/* Importing pointers component */}
               <TemplatePointers />
