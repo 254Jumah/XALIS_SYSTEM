@@ -16,10 +16,10 @@ import DoughnutChart from './components/DoughnutChart'
 import { useState } from 'react'
 
 const statsData = [
-    {title : "Today sales", value : "Ksh.34000", icon : <UserGroupIcon className='w-8 h-8'/>, description : "↗︎ 2300 (22%)"},
-    {title : "Total Sales", value : "Ksh3445", icon : <CreditCardIcon className='w-8 h-8'/>, description : "Current Week"},
-    {title : "Today bills", value : "Ksh450", icon : <CircleStackIcon className='w-8 h-8'/>, description : "Current Week" },
-    {title : "Total bills", value :  " Ksh50", icon : <UsersIcon className='w-8 h-8 text-red-700'/>, description : "↙ 18% FROM LAST MONTH"},
+    {title : "Today Cash sales", value : "Ksh4000",  description : "↗︎ 22% more than yesterday"},
+    {title : "Today MPESA Sales", value : "Ksh3445",  description : ""},
+    {title : "Today Purchases", value : "Ksh450", description : "" },
+    {title : "Today bills", value :  " Ksh50",  description : "↙ 18% yesterday"},
 ]
 
 

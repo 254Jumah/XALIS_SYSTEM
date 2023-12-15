@@ -26,14 +26,14 @@ function DoughnutChart(){
         },
       };
       
-      const labels = ['Electronics', 'Home Applicances', 'Beauty', 'Furniture', 'Watches', 'Apparel'];
+      const labels = ['500 ml bale', '1 litre bale', '10 litre water', '20 litre refils', '10 l refil', '20 litre new'];
       
       const data = {
         labels,
         datasets: [
             {
-                label: '# of Orders',
-                data: [122, 219, 30, 51, 82, 13],
+                label: 'total sales today',
+                data: labels.map(() => { return Math.random() * 100  }), 
                 backgroundColor: [
                   'rgba(255, 99, 132, 0.8)',
                   'rgba(54, 162, 235, 0.8)',
@@ -56,7 +56,7 @@ function DoughnutChart(){
       };
 
     return(
-        <TitleCard title={"Orders by Category"}>
+        <TitleCard title={"Sales by product cartegory"}>
                 <Doughnut options={options} data={data} />
         </TitleCard>
     )
