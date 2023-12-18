@@ -13,6 +13,7 @@ import DashboardTopBar from './components/DashboardTopBar'
 import { useDispatch } from 'react-redux'
 import {showNotification} from '../common/headerSlice'
 import DoughnutChart from './components/DoughnutChart'
+import Bills from './components/DoughnutChart'
 import { useState } from 'react'
 
 const statsData = [
@@ -68,8 +69,9 @@ function Dashboard(){
         {/** ---------------------- User source channels table  ------------------------- */}
         
             <div className="grid lg:grid-cols-2 mt-4 grid-cols-1 gap-6">
-                <UserChannels />
-                <DoughnutChart />
+             <UserChannels />
+               
+                 <DoughnutChart />
             </div>
         </>
     )

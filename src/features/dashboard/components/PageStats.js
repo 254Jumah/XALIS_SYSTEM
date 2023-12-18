@@ -1,6 +1,5 @@
-import HeartIcon  from '@heroicons/react/24/outline/HeartIcon'
 import BoltIcon  from '@heroicons/react/24/outline/BoltIcon'
-
+import { FaDollarSign } from 'react-icons/fa';
 
 function PageStats({}){
     return(
@@ -8,20 +7,20 @@ function PageStats({}){
   
   <div className="stat">
     <div className="stat-figure invisible md:visible">
-        <HeartIcon className='w-8 h-8'/>
+        <FaDollarSign className='w-8 h-8'/>
     </div>
-    <div className="stat-title">Total Likes</div>
-    <div className="stat-value">25.6K</div>
-    <div className="stat-desc">21% more than last month</div>
+    <div className="stat-title">Weekly Cash Sales</div>
+    <div className="stat-value">25,9099</div>
+    <div className="stat-desc">21% more than last week</div>
   </div>
   
   <div className="stat">
     <div className="stat-figure invisible md:visible">
-        <BoltIcon className='w-8 h-8'/>
+        <FaDollarSign className='w-8 h-8'/>
     </div>
-    <div className="stat-title">Page Views</div>
-    <div className="stat-value">2.6M</div>
-    <div className="stat-desc">14% more than last month</div>
+    <div className="stat-title">Weekly MPESA Sales</div>
+    <div className="stat-value">360000</div>
+    <div className="stat-desc">14% more than last WEEK</div>
   </div>
 </div>
     )
